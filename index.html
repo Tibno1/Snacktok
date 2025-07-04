@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SnackTok Recipes</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #fefefe;
+    margin: 0; padding: 2rem;
+    color: #444;
+  }
+  h1 {
+    text-align: center;
+    color: #e94f6f;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .recipe-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(233, 79, 111, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
+  }
+  .recipe-card:hover {
+    box-shadow: 0 8px 20px rgba(233, 79, 111, 0.3);
+  }
+  .recipe-image {
+    background: linear-gradient(135deg, #fbd5dc, #f0a5b3);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #fff;
+  }
+  .recipe-content {
+    padding: 1rem 1.25rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .recipe-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+  .recipe-excerpt {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  .recipe-card a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <h1>SnackTok Trending Recipes</h1>
+  <div class="recipe-grid">
+
+    <a href="recipes/hot_cheeto_mac.html" class="recipe-card" target="_blank" rel="noopener noreferrer">
+      <div class="recipe-image">🔥</div>
+      <div class="recipe-content">
+        <h2 class="recipe-title">Hot Cheeto Mac & Cheese</h2>
+        <p class="recipe-excerpt">This viral TikTok recipe is fiery, cheesy, and perfect for late-night cravings.</p>
+      </div>
+    </a>
+
+    <a href="recipes/dorm_ramen_sliders.html" class="recipe-card" target="_blank" rel="noopener noreferrer">
+      <div class="recipe-image">🍜</div>
+      <div class="recipe-content">
+        <h2 class="recipe-title">Dorm Ramen Sliders</h2>
+        <p class="recipe-excerpt">Turn instant noodles into mini burger buns with this fun dorm-friendly snack.</p>
+      </div>
+    </a>
+
+    <a href="recipes/matcha_cloud_drink.html" class="recipe-card" target="_blank" rel="noopener noreferrer">
+      <div class="recipe-image">☁️</div>
+      <div class="recipe-content">
+        <h2 class="recipe-title">Matcha Cloud Drink</h2>
+        <p class="recipe-excerpt">An aesthetic Starbucks dupe that energizes with frothy matcha goodness.</p>
+      </div>
+    </a>
+
+    <a href="recipes/mini_pancake_cereal.html" class="recipe-card" target="_blank" rel="noopener noreferrer">
+      <div class="recipe-image">🥞</div>
+      <div class="recipe-content">
+        <h2 class="recipe-title">Mini Pancake Cereal</h2>
+        <p class="recipe-excerpt">Tiny, stackable pancakes served with syrup for a trendy breakfast twist.</p>
+      </div>
+    </a>
+
+    <a href="recipes/frozen_yogurt_bark.html" class="recipe-card" target="_blank" rel="noopener noreferrer">
+      <div class="recipe-image">🍓</div>
+      <div class="recipe-content">
+        <h2 class="recipe-title">Frozen Yogurt Bark</h2>
+        <p class="recipe-excerpt">A healthy and snackable treat topped with your favorite fruits and granola.</p>
+      </div>
+    </a>
+
+  </div>
+</body>
+</html>
